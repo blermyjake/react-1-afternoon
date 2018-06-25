@@ -21,11 +21,11 @@ export default class FilterString extends Component {
             var names = this.state.names;
             var filteredNames = [];
         
-            // for ( var i = 0; i < names.length; i++ ) {
-            //   if ( names[i].includes(userInput) ) {
-            //     filteredNames.push(names[i]);
-            //   }
-            // }
+            for ( var i = 0; i < names.length; i++ ) {
+              if ( names[i].includes(userInput) ) {
+                filteredNames.push(names[i]);
+              }
+            }
         
 
     names.filter(function(val){
